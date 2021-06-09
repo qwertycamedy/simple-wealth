@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple-Wealth</title>
+    <title>Fees</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -57,22 +57,125 @@
             </div>
         </header>
         <main class="main">
-
-            <section class="banner">
+            <div class="breadcrumbs">
                 <div class="container">
-                    <div class="banner__inner">
-                        <div class="banner__left">
-                            <img src="images/banner/suptitle.svg" alt="" class="banner__suptitle">
-                            <h5 class="banner__title">
-                                Swiss<br>
-                                digitalized asset<br>
-                                management<br>
-                                services
-                            </h5>
-                            <p class="banner__subtitle">
-                                Simplewealth makes investment easy, with our professional automated investment service.
-                            </p>
+                    <div class="breadcrumbs__inner">
+                        <h1 class="breadcrumbs__title">Fees</h1>
+                    </div>
+                </div>
+            </div>
+
+            <section class="affordable">
+                    <div class="affordable__inner">
+                        <h2 class="affordable__title">Affordable management fee</h2>
+                        <div class="affordable__cards">
+                            <div class="affordable__card">
+                                <div class="affordable__card-title">
+                                    Individual
+                                </div>
+                                <div class="affordable__card-procent">
+                                    0.5%<span>annually</span>
+                                </div>
+                                <div class="affordable__options">
+                                    <div class="affordable__option">
+                                        <img class="affordable__option-img" src="images/affordable/option-arrow.svg"
+                                            alt="">
+                                        <p class="affordable__option-text">
+                                            We will build your portfolio, open a personal account for you (Swiss custody
+                                            bank) and monitor it for any period of time.
+                                        </p>
+                                    </div>
+                                    <div class="affordable__option">
+                                        <img class="affordable__option-img" src="images/affordable/option-arrow.svg"
+                                            alt="">
+                                        <p class="affordable__option-text">
+                                            We will build your portfolio, open a personal account for you (Swiss custody
+                                            bank) and monitor it for any period of time.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="#" class="affordable__card-link">Registration</a>
+                            </div>
+                            <div class="affordable__card">
+                                <div class="affordable__card-title">
+                                    Corporate
+                                </div>
+                                <div class="affordable__card-procent">
+                                    0.4%<span>annually</span>
+                                </div>
+                                <div class="affordable__options">
+                                    <div class="affordable__option">
+                                        <img class="affordable__option-img" src="images/affordable/option-arrow.svg"
+                                            alt="">
+                                        <p class="affordable__option-text">
+                                            If you work for a large company or have many people you know, bring in a
+                                            total of more than 1 million francs and get a lower management fee!
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="#" class="affordable__card-link">Registration</a>
+                            </div>
                         </div>
+                        <p class="affordable__bottom-text">
+                            We do not charge you additional trading fees, commissions, performance fees, administration
+                            fees, entry or exit fees!
+                        </p>
+                    </div>
+            </section>
+
+            <section class="fees">
+                <div class="container">
+                    <div class="fees__inner">
+                        <div class="fees__left">
+                            <h3 class="fees__title">
+                                Our fees include
+                            </h3>
+                            <img class="fees__img" src="images/fees/fixed-img.svg" alt="">
+                        </div>
+                        <div class="fees__right">
+                            <div class="fees__cards">
+                                <div class="fees__card">
+                                    <div class="fees__card-inner">
+                                        <img class="fees__card-img" src="images/fees/card1.svg" alt="">
+                                        <p class="fees__card-text">
+                                            Low-cost investing portfolios built and managed based on your priorities
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="fees__card">
+                                    <div class="fees__card-inner">
+                                        <img class="fees__card-img" src="images/fees/card2.svg" alt="">
+                                        <p class="fees__card-text">
+                                            Automatic features like portfolio rebalancing, dividend reinvestment, and
+                                            auto-adjust
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="fees__card">
+                                    <div class="fees__card-inner">
+                                        <img class="fees__card-img" src="images/fees/card3.svg" alt="">
+                                        <p class="fees__card-text">
+                                            Option to invest in socially responsible business
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="fees__card">
+                                    <div class="fees__card-inner">
+                                        <img class="fees__card-img" src="images/fees/card4.svg" alt="">
+                                        <p class="fees__card-text">
+                                            All onboarding and AML procedures
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide">
+                <div class="container">
+                    <div class="slide__inner">
                         <div class="slide__left">
                             <div class="slide__left-title">
                                 How your assets can<br>
@@ -85,7 +188,7 @@
                                         <p class="banner__range-name">Starting amount</p>
                                         <p class="banner__range-value"><span id='valueOne'>100 000</span> CHF</p>
                                     </div>
-                                    <input type="range" min="0" max="100" value="0" id='myRangeOne'
+                                    <input type="range" min="1" max="100" value="1" id='myRangeOne'
                                         class="banner__range-input">
                                 </div>
                                 <div class="banner__range-outer">
@@ -93,7 +196,7 @@
                                         <p class="banner__range-name">Monthly deposit</p>
                                         <p class="banner__range-value"><span id='valueTwo'>250</span> CHF</p>
                                     </div>
-                                    <input type="range" min="0" max="100" value="0" id='myRangeTwo'
+                                    <input type="range" min="1" max="100" value="1" id='myRangeTwo'
                                         class="banner__range-input">
                                 </div>
                                 <div class="banner__range-outer">
@@ -109,264 +212,16 @@
                             <a href="#" class="slide__link">Get the forecast <img src="images/arrow-next.svg"
                                     alt=""></a>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="tablet__container">
-                <img class="tablet__absolute" src="images/tablet.png" alt="tablet">
-            </div>
-
-            <section class="what">
-                <div class="container">
-                    <div class="what__inner">
-                        <div class="what__left">
-                            <a href="#" class="what__store">
-                                <svg class="what__store-svg">
-                                    <use xlink:href="images/sprite.svg#appstore"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="what__store">
-                                <svg class="what__store-svg">
-                                    <use xlink:href="images/sprite.svg#googleplay"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="what__right">
-                            <h4 class="what__title">
-                                What we're doing as<br>
-                                Robo-advisor
-                            </h4>
-                            <div class="what__cards">
-                                <div class="what__card what__cardOne">
-                                    <div class="what__card-inner innerOne">
-                                        <img class="what__card-img" src="images/what/card1.svg" alt="" class="card-img">
-                                        <div class="what__text">
-                                            Low-cost investing portfolios built and managed based on your priorities
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="what__card what__cardTwo">
-                                    <div class="what__card-inner innerTwo">
-                                        <img class="what__card-img" src="images/what/card2.svg" alt="" class="card-img">
-                                        <div class="what__text">
-                                            Instead of waiting, hour-long meetings, and liters of tea or coffee, you can
-                                            build up a personal securities portfolio and evaluate its perspectives
-                                            absolutely confidentially.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="what__card what__cardTh">
-                                    <div class="what__card-inner innerTh">
-                                        <img class="what__card-img" src="images/what/card3.svg" alt="" class="card-img">
-                                        <div class="what__text">
-                                            We have been developing and improving our mathematical models since 2015.
-                                            This allows us to preserve and grow client assets.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="what__link">Create personal investment portfolio <img
-                                    src="images/arrow-next.svg" alt=""></a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="american">
-                <div class="container">
-                    <div class="american__inner">
-                        <h4 class="american__title">
-                            Americans & Europeans<br>
-                            are welcome!
-                        </h4>
-                        <div class="american__subtitle">
-                            We also work with citizens of the European Union and even with citizens of America, if they
-                            are registered in Switzerland and have tax residency.
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="have">
-                <div class="container">
-                    <div class="have__inner">
-                        <div class="have__left">
-                            <h5 class="have__title">
-                                Have you
-                                already invested
-                                before?
-                            </h5>
-                        </div>
-                        <div class="have__right">
-                            <p class="have__suptext">
-                                Then we not only save you time. Portfolio creation, the ability to select a more risky
-                                profile, rebalancing and much more for just:
-                            </p>
-
-                            <div class="have__cards">
-                                <div class="have__card have__cardOne">
-                                    <div class="have__card-inner have__card-innerOne">
-                                        <img class="have__card-img" src="images/have/prev.svg" alt="">
-                                        <p class="have__card-text">
-                                            For accounts of CHF 50'000 to more our fee is 0.5% per year! This 0.5%
-                                            annual fee is based on the value of your account and is charged monthly.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="have__card have__cardTwo">
-                                    <div class="have__card-inner have__card-innerTwo">
-                                        <img class="have__card-img itemTwo" src="images/have/prev.svg" alt="">
-                                        <p class="have__card-text">
-                                            For accounts under CHF 50’000 our fee is CHF 20 per month and your first
-                                            calendar month is free. Minimum account level is CHF 10’000.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="have__subtext">
-                                We do not charge you additional trading fees, commissions, performance fees,
-                                administration fees, entry or exit fees! All your investments are insured. Up to
-                                USD500’000
-                            </p>
-
-                            <a href="#" class="have__link">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="fees">
-                <div class="container">
-                    <div class="fees__inner">
-                        <div class="fees__left">
-                            <h3 class="fees__title">
-                                Our fees include
+                        <div class="slide__right">
+                            <h3 class="slide__title">
+                                Slide to see
+                                what you will pay
                             </h3>
-                            <img class="fees__img" src="images/fees/fixed-img.svg" alt="">
-                        </div>
-                        <div class="fees__right">
-                            <div class="fees__cards">
-                                <div class="fees__card fees__cardOne">
-                                    <div class="fees__card-inner fees__card-innerOne">
-                                        <img class="fees__card-img" src="images/fees/card1.svg" alt="">
-                                        <p class="fees__card-text">
-                                            Low-cost investing portfolios built and managed based on your priorities
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="fees__card fees__cardTwo">
-                                    <div class="fees__card-inner fees__card-innerTwo">
-                                        <img class="fees__card-img" src="images/fees/card2.svg" alt="">
-                                        <p class="fees__card-text">
-                                            Automatic features like portfolio rebalancing, dividend reinvestment, and
-                                            auto-adjust
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="fees__card fees__cardTh">
-                                    <div class="fees__card-inner fees__card-innerTh">
-                                        <img class="fees__card-img" src="images/fees/card3.svg" alt="">
-                                        <p class="fees__card-text">
-                                            Option to invest in socially responsible business
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="fees__card fees__cardFr">
-                                    <div class="fees__card-inner fees__card-innerFr">
-                                        <img class="fees__card-img" src="images/fees/card4.svg" alt="">
-                                        <p class="fees__card-text">
-                                            All onboarding and AML procedures
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="how">
-                <div class="container">
-                    <div class="how__inner">
-                        <div class="how__fixed">
-                            <h2 class="how__fixed-title">
-                                How to start invest<br>
-                                with us
-                            </h2>
-                            <img class="how__fixed-img" src="images/how/fixed-img.webp" alt="image">
-                        </div>
-                        <div class="how__scrollable">
-                            <div class="how__scrollable-step stepOne">
-                                <div class="how__scrollable-num">Step 01</div>
-                                <p class="how__scrollable-title">Registartion</p>
-                                <p class="how__scrollable-text">
-                                    The second part is the survey itself. We will ask 10-15 questions online
-                                    about you, your life, goals and finances.
-                                </p>
-                                <a href="#" class="how__scrollable-link">Go to Registration <img
-                                        src="images/arrow-next.svg" alt=""></a>
-                            </div>
-
-                            <div class="how__scrollable-step stepTwo">
-                                <div class="how__scrollable-num">Step 02</div>
-                                <p class="how__scrollable-title">Verification</p>
-                                <p class="how__scrollable-text">
-                                    Complete the online verification. You will see a pop-up window — take a picture of
-                                    the QR code and
-                                    take a selfie + upload your utility bill or any document with your address
-                                    confirmation. It is also a
-                                    requirement by law and our financial regulator (FINMA).
-                                </p>
-                                <a href="#" class="how__scrollable-link">Start now <img src="images/arrow-next.svg"
-                                        alt=""></a>
-                            </div>
-
-                            <div class="how__scrollable-step stepThree">
-                                <div class="how__scrollable-num">Step 03</div>
-                                <p class="how__scrollable-title">Get a preview</p>
-                                <p class="how__scrollable-text">
-                                    To understand your goals, investment expectations and investment horizon, we ask you
-                                    to answer roughly
-                                    15 questions. Answers are used by our unique algorithm that calculates the risks and
-                                    gives you an
-                                    approximate investment outcome.
-                                </p>
-                                <p class="how__scrollable-text">
-                                    The questionnaire may feel long and too personal to you, but at the end, our team
-                                    can view only the
-                                    result - the calculated risk level (1-2-3-4-5). It is all without any human
-                                    involvement.
-                                </p>
-                                <p class="how__scrollable-text">
-                                    You can also change this level by yourself and get more risk and potentially more
-                                    return.
-                                </p>
-                                <a href="#" class="how__scrollable-link">Try now <img src="images/arrow-next.svg"
-                                        alt=""></a>
-                            </div>
-
-                            <div class="how__scrollable-step stepFour">
-                                <div class="how__scrollable-num">Step 04</div>
-                                <p class="how__scrollable-title">Consent to the terms and conditions</p>
-                                <p class="how__scrollable-text">
-                                    At the end, you need to agree to the terms of service and the contract's digital
-                                    version.
-                                </p>
-                                <p class="how__scrollable-text">
-                                    What happens then? <br>
-                                    The data we have collected will be sent to our Swiss Custody bank to open an
-                                    account.
-                                </p>
-                                <p class="how__scrollable-text">The account will be opened under your name, and you will
-                                    also receive
-                                    access by separate email directly from the bankers.
-                                </p>
-                                <a href="#" class="how__scrollable-link">Get start <img src="images/arrow-next.svg"
-                                        alt=""></a>
-                            </div>
+                            <p class="slide__text">
+                                Wondering how we make money? We have automated all processes. Algorithms replace the
+                                work of 10 people and this drastically reduces costs. Plus automatic analysis of market
+                                performance, event-driven actions and much more.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -377,23 +232,23 @@
                     <div class="completely__inner">
                         <div class="completely__left">
                             <h4 class="completely__title">
-                                Completely safe
+                                Completely safe<br>
                                 & confidential
                             </h4>
                             <img class="completely__img" src="images/completely/fixed-img.svg" alt="">
                         </div>
                         <div class="completely__right">
                             <div class="completely__cards">
-                                <div class="completely__card completely__cardOne">
-                                    <div class="completely__card-inner completely__card-innerOne">
+                                <div class="completely__card">
+                                    <div class="completely__card-inner">
                                         <img class="completely__card-img" src="images/completely/card1.svg" alt="">
                                         <p class="completely__card-text">
                                             You are the only one who can deposit and withdrawal funds from your account.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="completely__card completely__cardTwo">
-                                    <div class="completely__card-inner completely__card-innerTwo">
+                                <div class="completely__card">
+                                    <div class="completely__card-inner">
                                         <img class="completely__card-img" src="images/completely/card2.svg" alt="">
                                         <p class="completely__card-text">
                                             Your money is held in a custodial account in your name and belongs to you at
@@ -402,8 +257,8 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="completely__card completely__cardTh">
-                                    <div class="completely__card-inner completely__card-innerTh">
+                                <div class="completely__card">
+                                    <div class="completely__card-inner">
                                         <img class="completely__card-img" src="images/completely/card3.svg" alt="">
                                         <p class="completely__card-text">
                                             You will hold low-cost ETFs which track the market. You won’t be taking bets
@@ -412,8 +267,8 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="completely__card completely__cardFr">
-                                    <div class="completely__card-inner completely__card-innerFr">
+                                <div class="completely__card">
+                                    <div class="completely__card-inner">
                                         <img class="completely__card-img" src="images/completely/card4.svg" alt="">
                                         <p class="completely__card-text">
                                             All your data is stored in Switzerland, governed by Swiss law.
@@ -426,36 +281,8 @@
                 </div>
             </section>
 
-            <section class="partners">
-                <div class="partners__inner">
-                    <h4 class="partners__title">
-                        We are in the rankings and reviews of specialized media:
-                    </h4>
-                    <div class="partners__blocks">
-                        <div class="partners__block">
-                            <img class="partners__block-img" src="images/partners/item1.png" alt="partner">
-                        </div>
-                        <div class="partners__block">
-                            <img class="partners__block-img" src="images/partners/item2.png" alt="partner">
-                        </div>
-                        <div class="partners__block">
-                            <img class="partners__block-img" src="images/partners/item3.png" alt="partner">
-                        </div>
-                        <div class="partners__block">
-                            <img class="partners__block-img" src="images/partners/item4.png" alt="partner">
-                        </div>
-                        <div class="partners__block">
-                            <img class="partners__block-img" src="images/partners/item5.png" alt="partner">
-                        </div>
-                        <div class="partners__block">
-                            <img class="partners__block-img" src="images/partners/item6.png" alt="partner">
-                        </div>
-                        <div class="partners__block">
-                            <img class="partners__block-img" src="images/partners/item7.png" alt="partner">
-                        </div>
-                    </div>
-                </div>
-            </section>
+
+
             <section class="insights">
                 <div class="insights__top">
                     <div class="container">
@@ -967,7 +794,7 @@
                     </form>
                 </div>
             </div>
-            <div class="cookie">
+            <div class="cookie disable">
                 <div class="cookie__inner">
                     <div class="cookie__left">
                         <div class="cookie__title">Cookie preferences</div>
@@ -994,6 +821,7 @@
             </div>
         </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
