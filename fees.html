@@ -134,16 +134,16 @@
                         </div>
                         <div class="fees__right">
                             <div class="fees__cards">
-                                <div class="fees__card">
-                                    <div class="fees__card-inner">
+                                <div class="fees__card fees__cardOne">
+                                    <div class="fees__card-inner fees__card-innerOne">
                                         <img class="fees__card-img" src="images/fees/card1.svg" alt="">
                                         <p class="fees__card-text">
                                             Low-cost investing portfolios built and managed based on your priorities
                                         </p>
                                     </div>
                                 </div>
-                                <div class="fees__card">
-                                    <div class="fees__card-inner">
+                                <div class="fees__card fees__cardTwo">
+                                    <div class="fees__card-inner fees__card-innerTwo">
                                         <img class="fees__card-img" src="images/fees/card2.svg" alt="">
                                         <p class="fees__card-text">
                                             Automatic features like portfolio rebalancing, dividend reinvestment, and
@@ -151,16 +151,16 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="fees__card">
-                                    <div class="fees__card-inner">
+                                <div class="fees__card fees__cardTh">
+                                    <div class="fees__card-inner fees__card-innerTh">
                                         <img class="fees__card-img" src="images/fees/card3.svg" alt="">
                                         <p class="fees__card-text">
                                             Option to invest in socially responsible business
                                         </p>
                                     </div>
                                 </div>
-                                <div class="fees__card">
-                                    <div class="fees__card-inner">
+                                <div class="fees__card fees__cardFr">
+                                    <div class="fees__card-inner fees__card-innerFr">
                                         <img class="fees__card-img" src="images/fees/card4.svg" alt="">
                                         <p class="fees__card-text">
                                             All onboarding and AML procedures
@@ -232,23 +232,23 @@
                     <div class="completely__inner">
                         <div class="completely__left">
                             <h4 class="completely__title">
-                                Completely safe<br>
+                                Completely safe
                                 & confidential
                             </h4>
                             <img class="completely__img" src="images/completely/fixed-img.svg" alt="">
                         </div>
                         <div class="completely__right">
                             <div class="completely__cards">
-                                <div class="completely__card">
-                                    <div class="completely__card-inner">
+                                <div class="completely__card completely__cardOne">
+                                    <div class="completely__card-inner completely__card-innerOne">
                                         <img class="completely__card-img" src="images/completely/card1.svg" alt="">
                                         <p class="completely__card-text">
                                             You are the only one who can deposit and withdrawal funds from your account.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="completely__card">
-                                    <div class="completely__card-inner">
+                                <div class="completely__card completely__cardTwo">
+                                    <div class="completely__card-inner completely__card-innerTwo">
                                         <img class="completely__card-img" src="images/completely/card2.svg" alt="">
                                         <p class="completely__card-text">
                                             Your money is held in a custodial account in your name and belongs to you at
@@ -257,8 +257,8 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="completely__card">
-                                    <div class="completely__card-inner">
+                                <div class="completely__card completely__cardTh">
+                                    <div class="completely__card-inner completely__card-innerTh">
                                         <img class="completely__card-img" src="images/completely/card3.svg" alt="">
                                         <p class="completely__card-text">
                                             You will hold low-cost ETFs which track the market. You won’t be taking bets
@@ -267,8 +267,8 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="completely__card">
-                                    <div class="completely__card-inner">
+                                <div class="completely__card completely__cardFr">
+                                    <div class="completely__card-inner completely__card-innerFr">
                                         <img class="completely__card-img" src="images/completely/card4.svg" alt="">
                                         <p class="completely__card-text">
                                             All your data is stored in Switzerland, governed by Swiss law.
@@ -729,7 +729,7 @@
                         </div>
                         <div class="reg__input-outer">
                             <label for="" class="reg__label">Create password</label>
-                            <input required type="password" class="reg__input" placeholder="Minimum 6 characters">
+                            <input minlength="6" required type="password" class="reg__input" placeholder="Minimum 6 characters" pattern="(?=.*\d)(?=.*[a*b])(?=.*[A-Z]).{6,}">
                         </div>
                         <div class="reg__check">
                             <input required type="checkbox" class="reg__checkbox">
@@ -794,31 +794,6 @@
                     </form>
                 </div>
             </div>
-            <div class="cookie disable">
-                <div class="cookie__inner">
-                    <div class="cookie__left">
-                        <div class="cookie__title">Cookie preferences</div>
-                        <p class="cookie__subtitle">
-                            SW uses cookies to analyze and improve our site. By checking the boxes below, you give a
-                            consent
-                            to install relevant cookies on your device. SW will not place any cookies on your device
-                            (except
-                            necessary cookies) unless you check the boxes. Necessary cookies are always enabled. You can
-                            disable the necessary cookies in your browser settings, but this may affect the
-                            accessibility of
-                            SW site.
-                        </p>
-                    </div>
-                    <div class="cookie__right">
-                        <button class="cookie__collapse">
-                            Collapse
-                        </button>
-                        <button class="cookie__agree">
-                            Agree and Close
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -827,6 +802,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/fees.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 

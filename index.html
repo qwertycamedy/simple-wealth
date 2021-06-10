@@ -902,7 +902,7 @@
                         </div>
                         <div class="reg__input-outer">
                             <label for="" class="reg__label">Create password</label>
-                            <input required type="password" class="reg__input" placeholder="Minimum 6 characters">
+                            <input minlength="6" required type="password" class="reg__input" placeholder="Minimum 6 characters" pattern="(?=.*\d)(?=.*[a*b])(?=.*[A-Z]).{6,}">
                         </div>
                         <div class="reg__check">
                             <input required type="checkbox" class="reg__checkbox">
@@ -999,6 +999,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 

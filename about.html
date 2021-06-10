@@ -635,7 +635,7 @@
                         </div>
                         <div class="reg__input-outer">
                             <label for="" class="reg__label">Create password</label>
-                            <input required type="password" class="reg__input" placeholder="Minimum 6 characters">
+                            <input minlength="6" required type="password" class="reg__input" placeholder="Minimum 6 characters" pattern="(?=.*\d)(?=.*[a*b])(?=.*[A-Z]).{6,}">
                         </div>
                         <div class="reg__check">
                             <input required type="checkbox" class="reg__checkbox">
@@ -700,37 +700,13 @@
                     </form>
                 </div>
             </div>
-            <div class="cookie disable">
-                <div class="cookie__inner">
-                    <div class="cookie__left">
-                        <div class="cookie__title">Cookie preferences</div>
-                        <p class="cookie__subtitle">
-                            SW uses cookies to analyze and improve our site. By checking the boxes below, you give a
-                            consent
-                            to install relevant cookies on your device. SW will not place any cookies on your device
-                            (except
-                            necessary cookies) unless you check the boxes. Necessary cookies are always enabled. You can
-                            disable the necessary cookies in your browser settings, but this may affect the
-                            accessibility of
-                            SW site.
-                        </p>
-                    </div>
-                    <div class="cookie__right">
-                        <button class="cookie__collapse">
-                            Collapse
-                        </button>
-                        <button class="cookie__agree">
-                            Agree and Close
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src='js/about.js'></script>
     <script src="js/main.min.js"></script>
 </body>
 
