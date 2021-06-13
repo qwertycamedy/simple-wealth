@@ -136,7 +136,9 @@
                             <div class="fees__cards">
                                 <div class="fees__card fees__cardOne">
                                     <div class="fees__card-inner fees__card-innerOne">
-                                        <img class="fees__card-img" src="images/fees/card1.svg" alt="">
+                                        <div class="fees__card-img-outer">
+                                            <img class="fees__card-img" src="images/fees/card1.svg" alt="">
+                                        </div>
                                         <p class="fees__card-text">
                                             Low-cost investing portfolios built and managed based on your priorities
                                         </p>
@@ -144,7 +146,9 @@
                                 </div>
                                 <div class="fees__card fees__cardTwo">
                                     <div class="fees__card-inner fees__card-innerTwo">
-                                        <img class="fees__card-img" src="images/fees/card2.svg" alt="">
+                                        <div class="fees__card-img-outer">
+                                            <img class="fees__card-img" src="images/fees/card2.svg" alt="">
+                                        </div>
                                         <p class="fees__card-text">
                                             Automatic features like portfolio rebalancing, dividend reinvestment, and
                                             auto-adjust
@@ -153,7 +157,9 @@
                                 </div>
                                 <div class="fees__card fees__cardTh">
                                     <div class="fees__card-inner fees__card-innerTh">
-                                        <img class="fees__card-img" src="images/fees/card3.svg" alt="">
+                                        <div class="fees__card-img-outer">
+                                            <img class="fees__card-img" src="images/fees/card3.svg" alt="">
+                                        </div>
                                         <p class="fees__card-text">
                                             Option to invest in socially responsible business
                                         </p>
@@ -161,7 +167,9 @@
                                 </div>
                                 <div class="fees__card fees__cardFr">
                                     <div class="fees__card-inner fees__card-innerFr">
-                                        <img class="fees__card-img" src="images/fees/card4.svg" alt="">
+                                        <div class="fees__card-img-outer">
+                                            <img class="fees__card-img" src="images/fees/card4.svg" alt="">
+                                        </div>
                                         <p class="fees__card-text">
                                             All onboarding and AML procedures
                                         </p>
@@ -241,7 +249,9 @@
                             <div class="completely__cards">
                                 <div class="completely__card completely__cardOne">
                                     <div class="completely__card-inner completely__card-innerOne">
-                                        <img class="completely__card-img" src="images/completely/card1.svg" alt="">
+                                        <div class="completely__card-img-outer">
+                                            <img class="completely__card-img" src="images/completely/card1.svg" alt="">
+                                        </div>
                                         <p class="completely__card-text">
                                             You are the only one who can deposit and withdrawal funds from your account.
                                         </p>
@@ -249,7 +259,9 @@
                                 </div>
                                 <div class="completely__card completely__cardTwo">
                                     <div class="completely__card-inner completely__card-innerTwo">
-                                        <img class="completely__card-img" src="images/completely/card2.svg" alt="">
+                                        <div class="completely__card-img-outer">
+                                            <img class="completely__card-img" src="images/completely/card2.svg" alt="">
+                                        </div>
                                         <p class="completely__card-text">
                                             Your money is held in a custodial account in your name and belongs to you at
                                             all
@@ -259,7 +271,9 @@
                                 </div>
                                 <div class="completely__card completely__cardTh">
                                     <div class="completely__card-inner completely__card-innerTh">
-                                        <img class="completely__card-img" src="images/completely/card3.svg" alt="">
+                                        <div class="completely__card-img-outer">
+                                            <img class="completely__card-img" src="images/completely/card3.svg" alt="">
+                                        </div>
                                         <p class="completely__card-text">
                                             You will hold low-cost ETFs which track the market. You won’t be taking bets
                                             on
@@ -269,7 +283,9 @@
                                 </div>
                                 <div class="completely__card completely__cardFr">
                                     <div class="completely__card-inner completely__card-innerFr">
-                                        <img class="completely__card-img" src="images/completely/card4.svg" alt="">
+                                        <div class="completely__card-img-outer">
+                                            <img class="completely__card-img" src="images/completely/card4.svg" alt="">
+                                        </div>
                                         <p class="completely__card-text">
                                             All your data is stored in Switzerland, governed by Swiss law.
                                         </p>
@@ -714,33 +730,41 @@
                 <div class="close-icon"></div>
                 <div class="reg__inner">
                     <div class="modal__title">Create your account</div>
-                    <form action="" class="reg__form">
-                        <div class="reg__input-outer">
-                            <label for="" class="reg__label">First name</label>
-                            <input required type="text" class="reg__input" placeholder="Enter your name">
+                    <form action="#" method="GET" class="reg__form" id="formReg">
+                        <div class="reg__input-outer" id='firstnameO'>
+                            <input required type="text" class="reg__input" id="firstName" name="firstname"
+                                placeholder="Enter your name">
+                            <label for="firstName" class="reg__label">First name</label>
                         </div>
-                        <div class="reg__input-outer">
-                            <label for="" class="reg__label">Last name</label>
-                            <input required type="text" class="reg__input" placeholder="Enter your last name">
+                        <div class="reg__input-outer" id='lastnameO'>
+                            <input id="lastname" required name="lastname" type="text" class="reg__input"
+                                placeholder="Enter your last name">
+                            <label for="lastname" class="reg__label">Last name</label>
                         </div>
-                        <div class="reg__input-outer">
-                            <label for="" class="reg__label">E-mail</label>
-                            <input required type="email" class="reg__input" placeholder="Enter your e-mail">
+                        <div class="reg__input-outer" id='emailO'>
+                            <input id='email' required name="email" type="email" class="reg__input"
+                                placeholder="Enter your e-mail">
+                            <label for="email" class="reg__label">E-mail</label>
                         </div>
-                        <div class="reg__input-outer">
-                            <label for="" class="reg__label">Create password</label>
-                            <input minlength="6" required type="password" class="reg__input" placeholder="Minimum 6 characters" pattern="(?=.*\d)(?=.*[a*b])(?=.*[A-Z]).{6,}">
+                        <div class="reg__input-outer" id="passwordO">
+                            <span class="text" id="text"></span>
+                            <input required minlength="6" type="password" name="password" class="reg__input"
+                                placeholder="Minimum 6 characters" id='regPass'>
+                            <label for='regPass' class="reg__label" id='regLabel'>
+                                Create password
+                            </label>
+                            <a href="#" class="eue"><img src="images/modals/eue.svg" alt="eue"></a>
                         </div>
                         <div class="reg__check">
-                            <input required type="checkbox" class="reg__checkbox">
-                            <label for="" class="reg__check-label">
+                            <input required type="checkbox" id='ccheckbox' class="reg__checkbox">
+                            <label for="ccheckbox" class="reg__check-label">
                                 I agree with
                                 <a href="#" class="reg__check-label-link">Terms & Conditions</a>
                                 and
                                 <a href="#" class="reg__check-label-link">Privacy Policy</a>
                             </label>
                         </div>
-                        <button class="reg__button">Call to Action </button>
+                        <button class="reg__button" type="submit">Call to Action </button>
                         <a href="#" class="reg__regd">Already registered?</a>
                     </form>
                 </div>
@@ -761,14 +785,15 @@
                     <div class="modal__title">Login</div>
                     <form action="" class="reg__form">
                         <div class="reg__input-outer">
-                            <label for="" class="reg__label">E-mail</label>
-                            <input required type="email" class="reg__input" placeholder="Enter your e-mail adress">
+                            <input required type="email" name='email' class="reg__input"
+                                placeholder="Enter your e-mail adress">
+                            <label for="email" class="reg__label">E-mail</label>
                         </div>
                         <div class="reg__input-outer">
-                            <label for="" class="reg__label">Password</label>
                             <input required type="password" class="reg__input" placeholder="Enter password">
+                            <label for="" class="reg__label">Password</label>
                         </div>
-                        <button class="reg__button">Call to Action </button>
+                        <button class="reg__button" type="submit">Call to Action </button>
                         <div class="log__links">
                             <a href="#" class="log__link restore-link">Restore password </a>
                             or
@@ -783,10 +808,10 @@
                     <div class="modal__title">Restore password</div>
                     <form action="" class="form">
                         <div class="reg__input-outer">
-                            <label for="" class="reg__label">E-mail</label>
                             <input class="reg__input" type="text" placeholder="Enter your email address">
+                            <label for="" class="reg__label">E-mail</label>
                         </div>
-                        <button class="reg__button">Call to Action </button>
+                        <button class="reg__button" type="submit">Call to Action </button>
                         <div class="restore__go-back">
                             <img src="images/modals/arrow-prev.svg" alt="">
                             Go Back
@@ -796,7 +821,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>

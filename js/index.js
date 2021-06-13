@@ -1,3 +1,5 @@
+'use strict';
+
 var slider = document.getElementById('myRangeOne');
 var output = document.getElementById('valueOne');
 
@@ -92,3 +94,30 @@ AOS.init(
         once: true,
     }
 );
+
+
+// function validateForms(selector, rules) {
+//     new JustValidate(selector, {
+//         rules: rules,
+//         submitHandler: function (form, values, ajax) {
+//             console.log(form);
+//         }
+//     });
+// }
+// validateForms('.reg__form',
+//     {
+//         firstname: {
+//             required: true,
+//         },
+//         lastname: {
+//             required: true,
+//         },
+//         email: {
+//             required: true,
+//             email: true,
+//         },
+//         password: {
+//             required: true,
+//             password: true,
+//         }
+//     })

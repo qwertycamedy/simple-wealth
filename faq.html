@@ -86,13 +86,13 @@
               <form action="" class="get-in-touch__form">
                 <div class="get-in-touch__input-outer">
                   <label for="" class="get-in-touch__label">Full name</label>
-                  <input type="text" class="get-in-touch__input" placeholder="Enter your full name" required>
+                  <input required type="text" class="get-in-touch__input" placeholder="Enter your full name">
                 </div>
                 <div class="get-in-touch__input-outer">
                   <label for="" class="get-in-touch__label">E-mail</label>
-                  <input type="email" class="get-in-touch__input" placeholder="Enter your email address" required>
+                  <input required type="email" class="get-in-touch__input" placeholder="Enter your email address">
                 </div>
-                <button class="get-in-touch__button">Send</button>
+                <button type="submit" class="get-in-touch__button">Send</button>
               </form>
             </div>
           </div>
@@ -506,33 +506,41 @@
           <div class="close-icon"></div>
           <div class="reg__inner">
               <div class="modal__title">Create your account</div>
-              <form action="" class="reg__form">
-                  <div class="reg__input-outer">
-                      <label for="" class="reg__label">First name</label>
-                      <input required type="text" class="reg__input" placeholder="Enter your name">
+              <form action="#" method="GET" class="reg__form" id="formReg">
+                  <div class="reg__input-outer" id='firstnameO'>
+                      <input required type="text" class="reg__input" id="firstName" name="firstname"
+                          placeholder="Enter your name">
+                      <label for="firstName" class="reg__label">First name</label>
                   </div>
-                  <div class="reg__input-outer">
-                      <label for="" class="reg__label">Last name</label>
-                      <input required type="text" class="reg__input" placeholder="Enter your last name">
+                  <div class="reg__input-outer" id='lastnameO'>
+                      <input id="lastname" required name="lastname" type="text" class="reg__input"
+                          placeholder="Enter your last name">
+                      <label for="lastname" class="reg__label">Last name</label>
                   </div>
-                  <div class="reg__input-outer">
-                      <label for="" class="reg__label">E-mail</label>
-                      <input required type="email" class="reg__input" placeholder="Enter your e-mail">
+                  <div class="reg__input-outer" id='emailO'>
+                      <input id='email' required name="email" type="email" class="reg__input"
+                          placeholder="Enter your e-mail">
+                      <label for="email" class="reg__label">E-mail</label>
                   </div>
-                  <div class="reg__input-outer">
-                      <label for="" class="reg__label">Create password</label>
-                      <input minlength="6" required type="password" class="reg__input" placeholder="Minimum 6 characters" pattern="(?=.*\d)(?=.*[a*b])(?=.*[A-Z]).{6,}">
+                  <div class="reg__input-outer" id="passwordO">
+                      <span class="text" id="text"></span>
+                      <input required minlength="6" type="password" name="password" class="reg__input"
+                          placeholder="Minimum 6 characters" id='regPass'>
+                      <label for='regPass' class="reg__label" id='regLabel'>
+                          Create password
+                      </label>
+                      <a href="#" class="eue"><img src="images/modals/eue.svg" alt="eue"></a>
                   </div>
                   <div class="reg__check">
-                      <input required type="checkbox" class="reg__checkbox">
-                      <label for="" class="reg__check-label">
+                      <input required type="checkbox" id='ccheckbox' class="reg__checkbox">
+                      <label for="ccheckbox" class="reg__check-label">
                           I agree with
                           <a href="#" class="reg__check-label-link">Terms & Conditions</a>
                           and
                           <a href="#" class="reg__check-label-link">Privacy Policy</a>
                       </label>
                   </div>
-                  <button class="reg__button">Call to Action </button>
+                  <button class="reg__button" type="submit">Call to Action </button>
                   <a href="#" class="reg__regd">Already registered?</a>
               </form>
           </div>
@@ -553,14 +561,15 @@
               <div class="modal__title">Login</div>
               <form action="" class="reg__form">
                   <div class="reg__input-outer">
-                      <label for="" class="reg__label">E-mail</label>
-                      <input required type="email" class="reg__input" placeholder="Enter your e-mail adress">
+                      <input required type="email" name='email' class="reg__input"
+                          placeholder="Enter your e-mail adress">
+                      <label for="email" class="reg__label">E-mail</label>
                   </div>
                   <div class="reg__input-outer">
-                      <label for="" class="reg__label">Password</label>
                       <input required type="password" class="reg__input" placeholder="Enter password">
+                      <label for="" class="reg__label">Password</label>
                   </div>
-                  <button class="reg__button">Call to Action </button>
+                  <button class="reg__button" type="submit">Call to Action </button>
                   <div class="log__links">
                       <a href="#" class="log__link restore-link">Restore password </a>
                       or
@@ -575,10 +584,10 @@
               <div class="modal__title">Restore password</div>
               <form action="" class="form">
                   <div class="reg__input-outer">
-                      <label for="" class="reg__label">E-mail</label>
                       <input class="reg__input" type="text" placeholder="Enter your email address">
+                      <label for="" class="reg__label">E-mail</label>
                   </div>
-                  <button class="reg__button">Call to Action </button>
+                  <button class="reg__button" type="submit">Call to Action </button>
                   <div class="restore__go-back">
                       <img src="images/modals/arrow-prev.svg" alt="">
                       Go Back
@@ -588,7 +597,6 @@
       </div>
   </div>
   </div>
-
 
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
