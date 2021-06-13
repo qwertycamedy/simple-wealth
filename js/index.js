@@ -3,18 +3,20 @@
 
 const cookieEl = document.querySelector('.cookie');
 
-    let cookies = () => {
-        if (!Cookies.get('hide-cookie')) {
-            setTimeout(() => {
-                cookieEl.style.display = 'block';
-            }, 1000);
-        }
-        Cookies.set('hide-cookie', 'true', {
-            expires: 30
-        })
+let cookies = () => {
+    if (!Cookies.get('hide-cookie')) {
+        setTimeout(() => {
+            cookieEl.style.display = 'block';
+        }, 1000);
     }
+    Cookies.set('hide-cookie', 'true', {
+        expires: 30
+    })
+}
 
-    cookies();
+cookies();
+
+
 
 
 var slider = document.getElementById('myRangeOne');
