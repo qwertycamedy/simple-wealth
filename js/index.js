@@ -1,5 +1,22 @@
 'use strict';
 
+
+const cookieEl = document.querySelector('.cookie');
+
+    let cookies = () => {
+        if (!Cookies.get('hide-cookie')) {
+            setTimeout(() => {
+                cookieEl.style.display = 'block';
+            }, 1000);
+        }
+        Cookies.set('hide-cookie', 'true', {
+            expires: 30
+        })
+    }
+
+    cookies();
+
+
 var slider = document.getElementById('myRangeOne');
 var output = document.getElementById('valueOne');
 
@@ -9,6 +26,11 @@ slider.oninput = function () {
     output.innerHTML = this.value;
 }
 slider.addEventListener('mousemove', function () {
+    var x = slider.value;
+    var color = 'linear-gradient(90deg, rgb(89,36,235)' + x + '%, rgba(255,255,255, 0.5)' + x + '%)';
+    slider.style.background = color;
+});
+slider.addEventListener('touchmove', function () {
     var x = slider.value;
     var color = 'linear-gradient(90deg, rgb(89,36,235)' + x + '%, rgba(255,255,255, 0.5)' + x + '%)';
     slider.style.background = color;
@@ -24,6 +46,11 @@ sliderTwo.oninput = function () {
     outputTwo.innerHTML = this.value;
 }
 sliderTwo.addEventListener('mousemove', function () {
+    var y = sliderTwo.value;
+    var colorTwo = 'linear-gradient(90deg, rgb(89,36,235)' + y + '%, rgba(255,255,255, 0.5)' + y + '%)';
+    sliderTwo.style.background = colorTwo;
+});
+sliderTwo.addEventListener('touchmove', function () {
     var y = sliderTwo.value;
     var colorTwo = 'linear-gradient(90deg, rgb(89,36,235)' + y + '%, rgba(255,255,255, 0.5)' + y + '%)';
     sliderTwo.style.background = colorTwo;
@@ -96,28 +123,3 @@ AOS.init(
 );
 
 
-// function validateForms(selector, rules) {
-//     new JustValidate(selector, {
-//         rules: rules,
-//         submitHandler: function (form, values, ajax) {
-//             console.log(form);
-//         }
-//     });
-// }
-// validateForms('.reg__form',
-//     {
-//         firstname: {
-//             required: true,
-//         },
-//         lastname: {
-//             required: true,
-//         },
-//         email: {
-//             required: true,
-//             email: true,
-//         },
-//         password: {
-//             required: true,
-//             password: true,
-//         }
-//     })

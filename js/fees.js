@@ -11,7 +11,11 @@ slider.addEventListener('mousemove', function () {
     var color = 'linear-gradient(90deg, rgb(89,36,235)' + x + '%, rgba(255,255,255, 0.5)' + x + '%)';
     slider.style.background = color;
 });
-
+slider.addEventListener('touchmove', function () {
+    var x = slider.value;
+    var color = 'linear-gradient(90deg, rgb(89,36,235)' + x + '%, rgba(255,255,255, 0.5)' + x + '%)';
+    slider.style.background = color;
+});
 
 var sliderTwo = document.getElementById('myRangeTwo');
 var outputTwo = document.getElementById('valueTwo');
@@ -26,7 +30,11 @@ sliderTwo.addEventListener('mousemove', function () {
     var colorTwo = 'linear-gradient(90deg, rgb(89,36,235)' + y + '%, rgba(255,255,255, 0.5)' + y + '%)';
     sliderTwo.style.background = colorTwo;
 });
-
+sliderTwo.addEventListener('touchmove', function () {
+    var y = sliderTwo.value;
+    var colorTwo = 'linear-gradient(90deg, rgb(89,36,235)' + y + '%, rgba(255,255,255, 0.5)' + y + '%)';
+    sliderTwo.style.background = colorTwo;
+});
 
 
 

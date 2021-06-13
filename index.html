@@ -921,23 +921,23 @@
                     <form action="#" method="GET" class="reg__form" id="formReg">
                         <div class="reg__input-outer" id='firstnameO'>
                             <input required type="text" class="reg__input" id="firstName" name="firstname"
-                                placeholder="Enter your name">
+                                placeholder="Enter your name" data-validate-field="firstnameOne">
                             <label for="firstName" class="reg__label">First name</label>
                         </div>
                         <div class="reg__input-outer" id='lastnameO'>
                             <input id="lastname" required name="lastname" type="text" class="reg__input"
-                                placeholder="Enter your last name">
+                                placeholder="Enter your last name" data-validate-field="lastname">
                             <label for="lastname" class="reg__label">Last name</label>
                         </div>
                         <div class="reg__input-outer" id='emailO'>
                             <input id='email' required name="email" type="email" class="reg__input"
-                                placeholder="Enter your e-mail">
+                                placeholder="Enter your e-mail"  data-validate-field="email">
                             <label for="email" class="reg__label">E-mail</label>
                         </div>
                         <div class="reg__input-outer" id="passwordO">
                             <span class="text" id="text"></span>
                             <input required minlength="6" type="password" name="password" class="reg__input"
-                                placeholder="Minimum 6 characters" id='regPass'>
+                                placeholder="Minimum 6 characters" id='regPass'  data-validate-field="password">
                             <label for='regPass' class="reg__label" id='regLabel'>
                                 Create password
                             </label>
@@ -971,15 +971,16 @@
                 <div class="close-icon"></div>
                 <div class="log__inner">
                     <div class="modal__title">Login</div>
-                    <form action="" class="reg__form">
+                    <form action="#" method="GET" class="reg__form" id="formLog">
                         <div class="reg__input-outer">
-                            <input required type="email" name='email' class="reg__input"
-                                placeholder="Enter your e-mail adress">
-                            <label for="email" class="reg__label">E-mail</label>
+                            <input required type="email" id="emailTw" name='emailTw' class="reg__input"
+                                placeholder="Enter your e-mail adress" data-validate-field="emailTw">
+                            <label for="emailTw" class="reg__label">E-mail</label>
                         </div>
                         <div class="reg__input-outer">
-                            <input required type="password" class="reg__input" placeholder="Enter password">
-                            <label for="" class="reg__label">Password</label>
+                            <input required type="password" id="passwordTw" class="reg__input" placeholder="Enter password" name="passwordTw"
+                            data-validate-field="passwordTw">
+                            <label for="passswordTw" class="reg__label">Password</label>
                         </div>
                         <button class="reg__button" type="submit">Call to Action </button>
                         <div class="log__links">
@@ -994,10 +995,10 @@
                 <div class="close-icon"></div>
                 <div class="restore__inner">
                     <div class="modal__title">Restore password</div>
-                    <form action="" class="form">
+                    <form action="#" method="GET" class="form" id="formRes">
                         <div class="reg__input-outer">
-                            <input class="reg__input" type="text" placeholder="Enter your email address">
-                            <label for="" class="reg__label">E-mail</label>
+                            <input name="emailTh" required class="reg__input" type="email" placeholder="Enter your email address" data-validate-field="emailTh" id=emailTh>
+                            <label for="emailTh" class="reg__label">E-mail</label>
                         </div>
                         <button class="reg__button" type="submit">Call to Action </button>
                         <div class="restore__go-back">
@@ -1034,6 +1035,9 @@
             </div>
         </div>
     </div>
+
+    <script src="js/cookie.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
